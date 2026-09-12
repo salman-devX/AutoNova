@@ -17,9 +17,11 @@ export function createApp() {
   app.set('trust proxy', 1); // required for correct req.ip behind Render/Railway/Vercel proxies
 
   // Secure CORS: only the configured frontend origin(s) may call the API.
+  // Trailing slashes are stripped so a stray "/" in the env var (which the
+  // browser's Origin header never includes) doesn't silently break matching.
   const allowedOrigins = (process.env.FRONTEND_URL || 'http://localhost:5173')
     .split(',')
-    .map((o) => o.trim());
+    .map((o) => o.trim().replace(/\/+$/, ''));
 
   app.use(
     cors({
