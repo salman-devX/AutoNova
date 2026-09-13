@@ -4,7 +4,7 @@ A full-stack workshop management and vehicle service booking platform (codename 
 
 ## 🌐 Live Demo
 
-**[Visit AutoNova](https://autonova-mqva40zy0-salman-e4ab.vercel.app/)**
+**[Visit AutoNova](https://autonova-eight.vercel.app/)**
 
 Backend API: `https://autonova-glrg.onrender.com`
 
@@ -151,7 +151,7 @@ Web Developer • Software Developer
 
 ### 🔗 Links
 
-* 🌐 Live Website: https://autonova-mqva40zy0-salman-e4ab.vercel.app/
+* 🌐 Live Website: https://autonova-eight.vercel.app/
 * 🐙 GitHub: https://github.com/salman-devX
 
 ## 📄 License
